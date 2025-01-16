@@ -78,15 +78,15 @@ while(!merge)
                         while (true)
                         {
                             Console.WriteLine("Introduceti un numar (nu altceva) ");
-                            string input = Console.ReadLine();
+                            string citire = Console.ReadLine();
 
-                            if (int.TryParse(input, out SortareOpt))
+                            if (int.TryParse(citire, out SortareOpt))
                             {
                                 break;
                             }
                             else
                             {
-                                Console.WriteLine("Input invalid. Va rugam sa introduceti un numar.");
+                                Console.WriteLine("Optiune invalida");
                             }
                         }
                         switch (SortareOpt)
